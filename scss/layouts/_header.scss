@@ -1,0 +1,63 @@
+.logo {
+    padding-left: 103px;
+   padding-top: 16px;
+
+@media screen and (min-width: $bp-desktop ) {
+        padding-top: 32px;
+    }
+}
+
+
+
+.header {
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+     padding-top: 16px;
+
+&__container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+        &__nav {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            gap: 40px; }
+ &__menu {
+    display: none;
+   
+
+    @media screen and (min-width: $bp-desktop ) {
+        display: flex;
+        flex-grow: 1;
+        gap: 64px;
+        justify-content: center;
+        padding-top: 32px;
+    }
+}
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+         display: block;
+    }
+}
+
+&__burger {
+ background-color: transparent;
+ border: none;
+ width: 24px;
+ height: 24px;
+margin-right: 0px;
+padding-right: 50px;
+ fill: var(--bakery-landing-1-background);
+    @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+}
+
+
+}

@@ -1,0 +1,75 @@
+.contact-section {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      
+
+    @media screen and (min-width: $bp-tablet) {
+             flex-direction: row;
+             gap: 32px;
+      
+            }
+        }
+
+
+    &__title {
+           margin-bottom: 16px;
+           font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 131%;
+            color: var(--bakery-landing-1-s1);
+
+
+            @media screen and (min-width: $bp-desktop) {
+            font-weight: 900;
+            font-size: 64px;
+         
+          
+
+            }
+         }
+
+
+         &__mini {
+          color: var(--bakery-landing-1-s3);
+         }
+
+
+    &__form-fieled {
+
+    margin-bottom: 24px;
+    
+}
+
+    &__button {
+    display: block;
+     margin: 0 auto 16px;
+  
+}
+
+    &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    height: 176px;
+
+
+    @media screen and (min-width: $bp-tablet) {
+        margin: auto;
+        width: 320px;
+        height: 500px;
+     
+    }
+
+@media screen and (min-width: $bp-desktop) {
+    width: 600px;
+    height: 595px;
+   
+}
+        
+}
+
+
+}

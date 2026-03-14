@@ -1,0 +1,40 @@
+.input {
+    position: relative;
+
+    &__label {
+        display: block;
+    }
+
+
+    &__control {
+
+        padding: 8px 24px;
+        font-weight: 300;
+        width: 100%;
+        line-height: 1.17;
+        border: 1px solid var(--bakery-landing-1-s4);
+        border-radius: 8px;
+        background-color: transparent;
+
+        @media screen and (min-width: $bp-desktop) {
+            padding: 16px 42px;
+            font-size: 18px;
+           
+        }
+    }
+
+    &:focus {
+        border-color: var(--bakery-landing-1-c2);
+        outline: none;
+    }
+
+    &::placeholder {
+        color: var(--bakery-landing-1-s4);
+        font-size: 16px;
+        line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+        color: var(--bakery-landing-1-s1);
+    }
+}

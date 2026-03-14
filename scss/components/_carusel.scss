@@ -1,0 +1,23 @@
+.carusel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--bakery-landing-1-s1);
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--bakery-landing-1-s1);
+    cursor: pointer;
+}
+
+.carusel-button:hover {
+    background-color: var(--bakery-landing-1-s1);
+    fill: var(--bakery-landing-1-background);
+}
+
+.carusel-button.next {
+    transform: rotate(180deg);
+}

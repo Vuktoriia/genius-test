@@ -1,0 +1,16 @@
+
+// вынести форму в отдельный файл
+
+.form-terms {
+    max-width: 399px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+
+    &__link {
+            color: var(--bakery-landing-1-s1);
+            text-underline-offset: 2px;   }
+}
+

@@ -1,0 +1,109 @@
+.footer {
+ 
+    padding: 32px 0;
+    position: relative;
+    background-image: url(../images/footer-backg.png);
+    background-color: var(--bakery-landing-1-s1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  
+
+&__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet ) {
+          flex-direction: row;
+          
+                 }
+    }
+
+
+&::before,
+&::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: " ";
+        }
+    
+ &::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url("../images/bread-small.png");
+        }
+    
+ &::after {
+    background-image: url("../images/bread-big.png");
+     width: 380px;
+     height: 190px;
+    right: 0;
+        }
+&__nav,
+ &__addres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    text-align: center;
+   
+
+    @media screen and (min-width: $bp-tablet ) {
+        flex-direction: row;
+        flex-basis: 50%;
+        text-align: left;   
+    }
+
+
+
+
+}
+&__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+        
+&__logo,
+&__menu {
+ flex-grow: 1;      
+ }
+ 
+ 
+        &__addres-list,
+        &__address-info {
+            flex-grow: 1;
+        }
+    
+        &__address-link {
+            color: var(--bakery-landing-1-background);
+            font-size: 16px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    
+        &__address-link:hover {
+            color: var(--bakery-landing-1-c2);
+        }
+    
+        &__addres-icon {
+            fill: var(--bakery-landing-1-background);
+        }
+    
+        &__addres-icon:hover {
+            fill: var(--bakery-landing-1-c2);
+        }
+    
+        &__address-copyright {
+            font-size: 14px;
+            color: var(--bakery-landing-1-s4);
+        }
+
+}
+
+
+

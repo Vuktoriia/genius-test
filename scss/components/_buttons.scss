@@ -1,0 +1,33 @@
+.button {
+    padding: 10px 24px;
+    display: block;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background: var(--bakery-landing-1-c2);
+    border: 2px solid var(--bakery-landing-1-c2);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 87px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 16px 32px;
+        display: block;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        background: var(--bakery-landing-1-c2);
+        cursor: pointer;
+        margin-right: 87px;
+    }
+
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--bakery-landing-1-s3);
+
+    /* Link */
+}
+
+

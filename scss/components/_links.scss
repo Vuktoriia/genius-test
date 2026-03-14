@@ -1,0 +1,9 @@
+.link {
+    color: var(--bakery-landing-1-background);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: var(--bakery-landing-1-c2);
+}
