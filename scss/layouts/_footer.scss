@@ -13,10 +13,11 @@
 &__container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
 
         @media screen and (min-width: $bp-tablet ) {
           flex-direction: row;
+        gap: 20px;
           
                  }
     }
@@ -31,34 +32,51 @@
         }
     
  &::before {
+   
     width: 180px;
-    height: 120px;
+    height: 519px;
     left: 0;
-    background-image: url("../images/bread-small.png");
+    background-image: url("../images/bread-footer-before.png");
+
+    @media screen and (min-width: $bp-tablet ) {
+        height: 120px;
+    }
+
+    @media screen and (min-width: $bp-desktop ){
+        height: 120px;
+    }
+   
         }
     
  &::after {
     background-image: url("../images/bread-big.png");
-     width: 380px;
+    ; width: 265px;
      height: 190px;
     right: 0;
+
+    @media screen and (min-width: $bp-desktop ){
+        width: 380px
+    }
         }
 &__nav,
  &__addres {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 32px;
+    gap: 0px;
+    padding: 0px;
     text-align: center;
    
 
     @media screen and (min-width: $bp-tablet ) {
         flex-direction: row;
         flex-basis: 50%;
-        text-align: left;   
+        text-align: left;
+        gap: 20px;
+        padding: 32px;   
     }
 
 
+   
 
 
 }
@@ -66,13 +84,38 @@
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+
+    @media screen and (min-width:$bp-desktop) {
+        justify-content: flex-start;
+    }
 }
         
 &__logo,
 &__menu {
  flex-grow: 1;      
  }
- 
+&__list {
+    display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding-bottom: 18px;
+
+        @media screen and (min-width:$bp-desktop) {
+                gap: 16px;
+                padding-bottom: 0px;   }
+}
+ &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 18px;
+
+    @media screen and (min-width:$bp-desktop) {
+        gap: 16px;
+        padding-bottom: 0px;
+    }
+ }
+
  
         &__addres-list,
         &__address-info {
